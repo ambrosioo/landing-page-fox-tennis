@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Tennis - Muito Mais que um Jogo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --brand-blue: #002c69;
+            --brand-orange: #d97432;
+            --brand-orange-darker: #c2672a;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-brand-blue { background-color: var(--brand-blue); }
+        .text-brand-orange { color: var(--brand-orange); }
+        .border-brand-orange { border-color: var(--brand-orange); }
+
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background-color: var(--brand-orange);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background-color: var(--brand-orange-darker);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Seção Herói -->
+    <header class="relative text-white h-screen flex items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1594499468122-8268a44c4b63?q=80&w=2070&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative container mx-auto px-6" data-aos="fade-up">
+            <img src="logo.png" alt="Logo Fox Tennis" class="mx-auto h-24 w-auto mb-8" onerror="this.onerror=null;this.src='https://placehold.co/200x100/d97432/FFFFFF?text=Fox+Tennis';">
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">Fox Tennis: Muito Mais que um Jogo.</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">O seu novo ponto de encontro para esporte, amigos e bons momentos. Descubra um ambiente familiar onde o tênis conecta pessoas.</p>
+            <a href="#cta-final" class="cta-button inline-block text-white font-bold text-lg py-4 px-10 rounded-full uppercase tracking-wider">
+                Agende uma Visita Guiada
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção de Diferenciais -->
+        <section class="py-16 md:py-24 bg-gray-100 overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">Aqui, Cada Detalhe é Pensado para Você</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Item 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-5xl mb-4">👨‍👩‍👧‍👦</div>
+                        <h3 class="text-xl font-bold mb-2">Ambiente Familiar</h3>
+                        <p class="text-gray-600">Um clube acolhedor para todas as idades. Traga seus amigos e sua família para compartilhar a paixão pelo tênis.</p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-5xl mb-4">🍖</div>
+                        <h3 class="text-xl font-bold mb-2">Nossa Churrasqueira</h3>
+                        <p class="text-gray-600">O ponto de encontro perfeito após o jogo. Celebre suas vitórias e fortaleça amizades.</p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-5xl mb-4">🎾</div>
+                        <h3 class="text-xl font-bold mb-2">Duas Quadras de Saibro</h3>
+                        <p class="text-gray-600">Qualidade profissional para suas partidas, com manutenção impecável para o melhor desempenho.</p>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <div class="text-5xl mb-4">🚿</div>
+                        <h3 class="text-xl font-bold mb-2">Estrutura Completa</h3>
+                        <p class="text-gray-600">Vestiários confortáveis e equipados para sua total conveniência antes e depois de jogar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section class="py-16 md:py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">Encontre o Plano Perfeito para o seu Jogo</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card Aulas em Grupo -->
+                    <div class="border border-gray-200 rounded-lg p-8 flex flex-col justify-between transform hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="100">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Aulas em Grupo</h3>
+                            <p class="text-gray-600">Aprenda e evolua junto com outros apaixonados pelo esporte. Turmas para todos os níveis.</p>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1!%20Pode%20me%20falar%20mais%20sobre%20os%20pre%C3%A7os%20de%20Aulas%20em%20Grupo" target="_blank" class="mt-6 inline-block bg-brand-blue text-white font-bold py-3 px-6 rounded-full uppercase text-sm tracking-wider transition-all duration-300 hover:bg-blue-800 hover:scale-105">
+                            Quero Saber Mais
+                        </a>
+                    </div>
+                    <!-- Card Aulas Particulares -->
+                    <div class="border border-gray-200 rounded-lg p-8 flex flex-col justify-between transform hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="200">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Aulas Particulares</h3>
+                            <p class="text-gray-600">Foco total no seu desenvolvimento com um treinamento personalizado e exclusivo.</p>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1!%20Pode%20me%20falar%20mais%20sobre%20os%20pre%C3%A7os%20de%20Aulas%20Particulares" target="_blank" class="mt-6 inline-block bg-brand-blue text-white font-bold py-3 px-6 rounded-full uppercase text-sm tracking-wider transition-all duration-300 hover:bg-blue-800 hover:scale-105">
+                            Quero Saber Mais
+                        </a>
+                    </div>
+                    <!-- Card Aluguel de Quadra -->
+                    <div class="border border-gray-200 rounded-lg p-8 flex flex-col justify-between transform hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="300">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Aluguel de Quadra</h3>
+                            <p class="text-gray-600">Reúna seus amigos e venha jogar. Reserve seu horário de forma simples e rápida.</p>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1!%20Pode%20me%20falar%20mais%20sobre%20os%20pre%C3%A7os%20de%20Aluguel%20de%20Quadra" target="_blank" class="mt-6 inline-block bg-brand-blue text-white font-bold py-3 px-6 rounded-full uppercase text-sm tracking-wider transition-all duration-300 hover:bg-blue-800 hover:scale-105">
+                            Quero Saber Mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Crianças -->
+        <section class="py-16 md:py-24 bg-brand-blue text-white overflow-hidden">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <video autoplay loop muted playsinline class="rounded-lg shadow-2xl w-full">
+                        <source src="criancas.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+                <div class="md:w-1/2 text-center md:text-left" data-aos="fade-left">
+                    <span class="text-brand-orange font-bold uppercase">Para os Pequenos Campeões</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Dê ao seu filho mais que um esporte.<br>Um passaporte para o futuro.</h2>
+                    <p class="text-gray-300 mb-6">Enquanto outros estão nas telas, seu filho pode estar desenvolvendo foco, disciplina e amizades para a vida toda. Descubra o poder do tênis!</p>
+                    <div class="bg-white/10 p-6 rounded-lg border border-brand-orange/50">
+                        <p class="text-xl">Nova Turma aos Sábados (1x por semana)</p>
+                        <p class="text-5xl font-black text-brand-orange my-2">R$ 190,00<span class="text-2xl font-bold">/mês</span></p>
+                        <p class="text-gray-300 font-semibold">Consulte horários disponíveis!</p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1%2C%20Fox%20Tennis!%20Gostaria%20de%20saber%20mais%20sobre%20a%20turma%20infantil%20aos%20s%C3%A1bados." target="_blank" class="cta-button mt-8 inline-block text-white font-bold text-lg py-4 px-10 rounded-full uppercase tracking-wider pulse-animation">
+                        Quero a Vaga para Meu Filho!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Missão -->
+        <section class="py-16 md:py-24 bg-gray-100 overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800" data-aos="fade-up">Nossa Missão é Conectar Pessoas</h2>
+                <div class="max-w-3xl mx-auto mt-6" data-aos="fade-up" data-aos-delay="100">
+                    <p class="text-2xl font-semibold text-gray-700 italic border-l-4 border-brand-orange pl-6">"Incentivar e desenvolver a prática do tênis, criar conexões interpessoais e transformar vidas através do movimento é a nossa missão. 🦊🎾"</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de CTA Final -->
+        <section id="cta-final" class="py-16 md:py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800" data-aos="fade-up">Pronto para Dar o Primeiro Saque?</h2>
+                <p class="max-w-3xl mx-auto text-gray-600 my-6" data-aos="fade-up" data-aos-delay="100">A melhor forma de conhecer a Fox Tennis é vindo até aqui. Sinta a energia das nossas quadras, conheça nossa estrutura e descubra por que somos o clube de tênis mais acolhedor da região.</p>
+                <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20na%20Fox%20Tennis." target="_blank" class="cta-button inline-block text-white font-bold text-lg py-4 px-10 rounded-full uppercase tracking-wider" data-aos="fade-up" data-aos-delay="200">
+                    Quero Conhecer o Clube
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-brand-blue text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+             <img src="logo.png" alt="Logo Fox Tennis" class="mx-auto h-16 w-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/180x70/d97432/FFFFFF?text=Fox+Tennis';">
+            <p><strong>Endereço:</strong> Rua das Quadras, 123 - Bairro Saibro - Sua Cidade, Estado</p>
+            <p><strong>Contato:</strong> (21) 99999-8888 | contato@foxtennis.com.br</p>
+            <p class="text-gray-400 text-sm mt-4">© 2025 Fox Tennis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Init Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Duração da animação
+        once: true, // Animar apenas uma vez
+        offset: 50, // Começar a animação um pouco antes do elemento aparecer
+      });
+    </script>
+
+</body>
+</html>
