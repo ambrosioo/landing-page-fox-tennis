@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fox Tennis - Muito Mais que um Jogo</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <style>
         :root {
             --brand-blue: #002c69;
@@ -43,49 +41,54 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+        
+        /* Estilos para o Carrossel Swiper */
+        .swiper-button-next, .swiper-button-prev {
+            color: var(--brand-orange);
+        }
+        .swiper-pagination-bullet-active {
+            background-color: var(--brand-orange);
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Seção Herói -->
     <header class="relative text-white h-screen flex items-center justify-center text-center overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1594499468122-8268a44c4b63?q=80&w=2070&auto=format&fit=crop');"></div>
+        <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
+             <source src="adultos.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative container mx-auto px-6" data-aos="fade-up">
             <img src="logo.png" alt="Logo Fox Tennis" class="mx-auto h-24 w-auto mb-8" onerror="this.onerror=null;this.src='https://placehold.co/200x100/d97432/FFFFFF?text=Fox+Tennis';">
-            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">Fox Tennis: Muito Mais que um Jogo.</h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">O seu novo ponto de encontro para esporte, amigos e bons momentos. Descubra um ambiente familiar onde o tênis conecta pessoas.</p>
-            <a href="#cta-final" class="cta-button inline-block text-white font-bold text-lg py-4 px-10 rounded-full uppercase tracking-wider">
-                Agende uma Visita Guiada
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">Fox Tennis: Muito Mais que um Clube.</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Mais que um lugar para treinar, um ambiente para você fazer amigos, se desafiar e redescobrir o prazer do esporte.</p>
+            <a href="https://api.whatsapp.com/send?phone=552170962362&text=Quero%20agendar%20minha%20aula%20experimental" target="_blank" class="cta-button inline-block text-white font-bold text-lg py-4 px-10 rounded-full uppercase tracking-wider">
+                Agendar Aula Experimental
             </a>
         </div>
     </header>
 
     <main>
-        <!-- Seção de Diferenciais -->
         <section class="py-16 md:py-24 bg-gray-100 overflow-hidden">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">Aqui, Cada Detalhe é Pensado para Você</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Item 1 -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
                         <div class="text-5xl mb-4">👨‍👩‍👧‍👦</div>
                         <h3 class="text-xl font-bold mb-2">Ambiente Familiar</h3>
                         <p class="text-gray-600">Um clube acolhedor para todas as idades. Traga seus amigos e sua família para compartilhar a paixão pelo tênis.</p>
                     </div>
-                    <!-- Item 2 -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
                         <div class="text-5xl mb-4">🍖</div>
                         <h3 class="text-xl font-bold mb-2">Nossa Churrasqueira</h3>
                         <p class="text-gray-600">O ponto de encontro perfeito após o jogo. Celebre suas vitórias e fortaleça amizades.</p>
                     </div>
-                    <!-- Item 3 -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
                         <div class="text-5xl mb-4">🎾</div>
                         <h3 class="text-xl font-bold mb-2">Duas Quadras de Saibro</h3>
                         <p class="text-gray-600">Qualidade profissional para suas partidas, com manutenção impecável para o melhor desempenho.</p>
                     </div>
-                    <!-- Item 4 -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="400">
                         <div class="text-5xl mb-4">🚿</div>
                         <h3 class="text-xl font-bold mb-2">Estrutura Completa</h3>
@@ -95,12 +98,10 @@
             </div>
         </section>
 
-        <!-- Seção de Serviços -->
         <section class="py-16 md:py-24 bg-white overflow-hidden">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">Encontre o Plano Perfeito para o seu Jogo</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Card Aulas em Grupo -->
                     <div class="border border-gray-200 rounded-lg p-8 flex flex-col justify-between transform hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="100">
                         <div>
                             <h3 class="text-2xl font-bold mb-2">Aulas em Grupo</h3>
@@ -110,7 +111,6 @@
                             Quero Saber Mais
                         </a>
                     </div>
-                    <!-- Card Aulas Particulares -->
                     <div class="border border-gray-200 rounded-lg p-8 flex flex-col justify-between transform hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="200">
                         <div>
                             <h3 class="text-2xl font-bold mb-2">Aulas Particulares</h3>
@@ -120,7 +120,6 @@
                             Quero Saber Mais
                         </a>
                     </div>
-                    <!-- Card Aluguel de Quadra -->
                     <div class="border border-gray-200 rounded-lg p-8 flex flex-col justify-between transform hover:shadow-xl transition-shadow duration-300" data-aos="zoom-in" data-aos-delay="300">
                         <div>
                             <h3 class="text-2xl font-bold mb-2">Aluguel de Quadra</h3>
@@ -133,8 +132,168 @@
                 </div>
             </div>
         </section>
+        
+        <section class="py-16 md:py-24 bg-gray-100 overflow-hidden">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Próximos Eventos</h2>
+                    <p class="text-gray-600 mt-2">Fique por dentro do que acontece no nosso clube!</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
+                    <div class="md:w-1/3" data-aos="fade-right">
+                        <img src="outubro_rosa.jpeg" alt="Evento Outubro Rosa na Fox Tennis" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left" data-aos="fade-left">
+                        <span class="text-pink-500 font-bold uppercase tracking-wider">Evento Especial</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Clínica de Tênis Outubro Rosa</h3>
+                        <p class="text-gray-600 mb-4">Em celebração ao Outubro Rosa, convidamos todas as mulheres para uma aula especial e gratuita. Venha se divertir, aprender e apoiar essa causa importante conosco!</p>
+                        <div class="flex items-center justify-center md:justify-start gap-6 mb-6 text-left">
+                            <div class="flex items-center gap-2">
+                                <span class="text-2xl">🗓️</span>
+                                <div>
+                                    <p class="font-bold text-gray-700">Data</p>
+                                    <p>26/10 (Sábado)</p>
+                                </div>
+                            </div>
+                             <div class="flex items-center gap-2">
+                                <span class="text-2xl">⏰</span>
+                                <div>
+                                    <p class="font-bold text-gray-700">Horário</p>
+                                    <p>08:00h</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank" class="cta-button inline-block text-white font-bold text-base py-3 px-8 rounded-full uppercase tracking-wider">
+                            Inscreva-se (Link Aqui)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Seção Crianças -->
+        <section class="py-16 md:py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nossos Campeões</h2>
+                    <p class="text-gray-600 mt-2">O orgulho da Fox Tennis! Conheça os atletas que se destacam em torneios.</p>
+                </div>
+                <div class="swiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                <img src="vitor_campeao.png" alt="Campeão Vitor" class="w-full h-80 object-cover rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Campeão';">
+                                <h3 class="text-2xl font-bold text-brand-blue">Vitor</h3>
+                                <p class="text-gray-700 font-semibold">Campeão Cat C</p>
+                                <p class="text-gray-500">0/40 rackets</p>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                <img src="matheus_campeao.png" alt="Campeão Matheus Ambrosio" class="w-full h-80 object-cover rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Campeão';">
+                                <h3 class="text-2xl font-bold text-brand-blue">Matheus Ambrosio</h3>
+                                <p class="text-gray-700 font-semibold">Campeão Cat D</p>
+                                <p class="text-gray-500">Circuito Niteroiense de Tennis</p>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Juliana Silva</h3>
+                                 <p class="text-gray-700 font-semibold">Campeã Feminino B</p>
+                                 <p class="text-gray-500">Torneio Interno Fox</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Carlos Pereira</h3>
+                                 <p class="text-gray-700 font-semibold">Campeão Cat A</p>
+                                 <p class="text-gray-500">Copa SG de Tênis</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Fernanda Lima</h3>
+                                 <p class="text-gray-700 font-semibold">Vice-Campeã Cat C</p>
+                                 <p class="text-gray-500">Aberto de Maricá</p>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Ricardo Alves</h3>
+                                 <p class="text-gray-700 font-semibold">Campeão Duplas Mistas</p>
+                                 <p class="text-gray-500">Festival de Duplas Fox</p>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Beatriz Costa</h3>
+                                 <p class="text-gray-700 font-semibold">Campeã Juvenil</p>
+                                 <p class="text-gray-500">Circuito Kids Regional</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Lucas Martins</h3>
+                                 <p class="text-gray-700 font-semibold">Campeão Cat D</p>
+                                 <p class="text-gray-500">Torneio da Amizade</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Ana Souza</h3>
+                                 <p class="text-gray-700 font-semibold">Campeã Feminino A</p>
+                                 <p class="text-gray-500">Rainhas da Quadra</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="bg-gray-100 rounded-lg shadow-md p-6 text-center">
+                                 <img src="https://placehold.co/400x320/CCCCCC/FFFFFF?text=Foto+Atleta" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Thiago Mendes</h3>
+                                 <p class="text-gray-700 font-semibold">Vice-Campeão Cat B</p>
+                                 <p class="text-gray-500">Copa Verão SG</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-8"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-16 md:py-24 bg-gray-100 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Momentos Fox</h2>
+                    <p class="text-gray-600 mt-2">Mais que um clube, uma família. Confira nossos registros!</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
+                        <img src="momentos_fox_1.png" alt="Momento de confraternização na Fox Tennis" class="w-full h-full object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="momentos_fox_2.png" alt="Alunos em aula de tênis" class="w-full h-full object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="momentos_fox_3.png" alt="Jogadores em partida na Fox Tennis" class="w-full h-full object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="momentos_fox_4.png" alt="Crianças na aula de tênis infantil" class="w-full h-full object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="momentos_fox_5.png" alt="Equipe e alunos da Fox Tennis" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="py-16 md:py-24 bg-brand-blue text-white overflow-hidden">
             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2" data-aos="fade-right">
@@ -144,22 +303,21 @@
                     </video>
                 </div>
                 <div class="md:w-1/2 text-center md:text-left" data-aos="fade-left">
-                    <span class="text-brand-orange font-bold uppercase">Para os Pequenos Campeões</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Dê ao seu filho mais que um esporte.<br>Um passaporte para o futuro.</h2>
-                    <p class="text-gray-300 mb-6">Enquanto outros estão nas telas, seu filho pode estar desenvolvendo foco, disciplina e amizades para a vida toda. Descubra o poder do tênis!</p>
-                    <div class="bg-white/10 p-6 rounded-lg border border-brand-orange/50">
-                        <p class="text-xl">Nova Turma aos Sábados (1x por semana)</p>
+                    <span class="text-brand-orange font-bold uppercase">OFERTA POR TEMPO LIMITADO</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Invista no Futuro do seu Filho.<br>Vagas Quase Esgotadas!</h2>
+                    <p class="text-gray-300 mb-6">Enquanto outros estão nas telas, seu filho pode estar desenvolvendo foco, disciplina e amizades para a vida toda. Esta é a sua chance!</p>
+                    <div class="bg-white/10 p-6 rounded-lg border-2 border-brand-orange">
+                        <p class="text-xl font-bold">⚠️ ÚLTIMAS VAGAS: Turma aos Sábados</p>
                         <p class="text-5xl font-black text-brand-orange my-2">R$ 190,00<span class="text-2xl font-bold">/mês</span></p>
-                        <p class="text-gray-300 font-semibold">Consulte horários disponíveis!</p>
+                        <p class="text-gray-200 font-semibold">Oferta válida para as próximas 5 matrículas!</p>
                     </div>
-                    <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1%2C%20Fox%20Tennis!%20Gostaria%20de%20saber%20mais%20sobre%20a%20turma%20infantil%20aos%20s%C3%A1bados." target="_blank" class="cta-button mt-8 inline-block text-white font-bold text-lg py-4 px-10 rounded-full uppercase tracking-wider pulse-animation">
-                        Quero a Vaga para Meu Filho!
+                    <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1%2C%20Fox%20Tennis!%20Gostaria%20de%20garantir%20uma%20das%20%C3%BAltimas%20vagas%20na%20turma%20infantil%20aos%20s%C3%A1bados!" target="_blank" class="cta-button mt-8 inline-block text-white font-bold text-lg py-4 px-10 rounded-full uppercase tracking-wider pulse-animation">
+                        Garantir Vaga AGORA!
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Missão -->
         <section class="py-16 md:py-24 bg-gray-100 overflow-hidden">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800" data-aos="fade-up">Nossa Missão é Conectar Pessoas</h2>
@@ -169,7 +327,6 @@
             </div>
         </section>
         
-        <!-- Seção de CTA Final -->
         <section id="cta-final" class="py-16 md:py-24 bg-white overflow-hidden">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800" data-aos="fade-up">Pronto para Dar o Primeiro Saque?</h2>
@@ -181,17 +338,15 @@
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer class="bg-brand-blue text-white">
         <div class="container mx-auto px-6 py-8 text-center">
              <img src="logo.png" alt="Logo Fox Tennis" class="mx-auto h-16 w-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/180x70/d97432/FFFFFF?text=Fox+Tennis';">
-            <p><strong>Endereço:</strong> Rua das Quadras, 123 - Bairro Saibro - Sua Cidade, Estado</p>
-            <p><strong>Contato:</strong> (21) 99999-8888 | contato@foxtennis.com.br</p>
+            <p><strong>Endereço:</strong> Rua Dr. Getúlio Vargas, 114 - Barro Vermelho, São Gonçalo</p>
+            <p><strong>Contato:</strong> (21) 97096-2362</p>
             <p class="text-gray-400 text-sm mt-4">© 2025 Fox Tennis. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- AOS Init Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -199,6 +354,46 @@
         once: true, // Animar apenas uma vez
         offset: 50, // Começar a animação um pouco antes do elemento aparecer
       });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Parâmetros opcionais
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            
+            // Responsividade
+            breakpoints: {
+                // quando a largura da janela for >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // quando a largura da janela for >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            },
+
+            // Paginação (bolinhas)
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Botões de navegação (setas)
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 
 </body>
