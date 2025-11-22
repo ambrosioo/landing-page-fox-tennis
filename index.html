@@ -54,6 +54,7 @@
 <body class="bg-gray-50 text-gray-800">
 
     <header class="relative text-white h-screen flex items-center justify-center text-center overflow-hidden">
+        <!-- Vídeo de fundo para a seção Hero -->
         <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
              <source src="adultos.mp4" type="video/mp4">
             Seu navegador não suporta a tag de vídeo.
@@ -74,21 +75,29 @@
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-aos="fade-up">Aqui, Cada Detalhe é Pensado para Você</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- DETALHE 1: Ambiente Familiar - Agora com foto -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
-                        <div class="text-5xl mb-4">👨‍👩‍👧‍👦</div>
+                        <div class="mb-4">
+                            <img src="momentos_fox_5.png" alt="Ambiente Familiar Fox Tennis" class="w-full h-40 object-cover rounded-md mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/400x160/d97432/FFFFFF?text=Ambiente+Familiar';">
+                        </div>
                         <h3 class="text-xl font-bold mb-2">Ambiente Familiar</h3>
                         <p class="text-gray-600">Um clube acolhedor para todas as idades. Traga seus amigos e sua família para compartilhar a paixão pelo tênis.</p>
                     </div>
+                    <!-- DETALHE 2: Nossa Churrasqueira - Permanece com ícone -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
                         <div class="text-5xl mb-4">🍖</div>
                         <h3 class="text-xl font-bold mb-2">Nossa Churrasqueira</h3>
                         <p class="text-gray-600">O ponto de encontro perfeito após o jogo. Celebre suas vitórias e fortaleça amizades.</p>
                     </div>
+                    <!-- DETALHE 3: Duas Quadras de Saibro - Agora com foto -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
-                        <div class="text-5xl mb-4">🎾</div>
+                        <div class="mb-4">
+                             <img src="quadra.jpeg" alt="Quadras de Saibro Fox Tennis" class="w-full h-40 object-cover rounded-md mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/400x160/002c69/FFFFFF?text=Duas+Quadras+de+Saibro';">
+                        </div>
                         <h3 class="text-xl font-bold mb-2">Duas Quadras de Saibro</h3>
                         <p class="text-gray-600">Qualidade profissional para suas partidas, com manutenção impecável para o melhor desempenho.</p>
                     </div>
+                    <!-- DETALHE 4: Estrutura Completa - Permanece com ícone -->
                     <div class="bg-white p-8 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="400">
                         <div class="text-5xl mb-4">🚿</div>
                         <h3 class="text-xl font-bold mb-2">Estrutura Completa</h3>
@@ -138,7 +147,7 @@
                 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto" data-aos="fade-up">
                     
                     <div class="md:w-1/3">
-                        <img src="modulo_iniciacao.png"> 
+                        <img src="modulo_iniciacao.png" alt="Módulo de Iniciação ao Tennis" onerror="this.onerror=null;this.src='https://placehold.co/300x400/002c69/FFFFFF?text=Módulo+Iniciação';">
                     </div>
 
                     <div class="md:w-2/3 text-center md:text-left">
@@ -165,19 +174,69 @@
                 </div>
             </div>
         </section>
-        <section class="py-16 md:py-24 bg-white overflow-hidden"> <div class="container mx-auto px-6">
-                 <div class="text-center mb-12" data-aos="fade-up">
+
+        <!-- SEÇÃO PRÓXIMOS EVENTOS -->
+        <section class="py-16 md:py-24 bg-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-up">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Próximos Eventos</h2>
                     <p class="text-gray-600 mt-2">Fique por dentro do que acontece no nosso clube!</p>
                 </div>
-                
-                <div class="text-center bg-gray-50 rounded-xl shadow-lg p-8 md:p-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                    <span class="text-5xl mb-4 block">🗓️</span>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Novidades em Breve!</h3>
-                    <p class="text-gray-600">Nosso calendário de torneios e clínicas para a próxima temporada está sendo finalizado. Fique atento por aqui e em nossas redes sociais para não perder nada!</p>
+
+                <!-- Evento Fox Confra Cup -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 max-w-5xl mx-auto transform hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row">
+                        <!-- Imagem do Evento -->
+                        <div class="md:w-5/12 relative min-h-[300px] md:min-h-full">
+                            <img src="fox_confra_cup.jpeg" alt="Fox Confra Cup" class="absolute inset-0 w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x800/d97432/FFFFFF?text=Fox+Confra+Cup';">
+                        </div>
+                        
+                        <!-- Conteúdo do Evento -->
+                        <div class="md:w-7/12 p-8 md:p-10 flex flex-col justify-center text-left">
+                            <div class="inline-flex items-center gap-2 mb-3">
+                                <span class="bg-brand-orange/10 text-brand-orange font-bold text-sm px-3 py-1 rounded-full uppercase tracking-wide">08 a 13 Dezembro</span>
+                                <span class="text-gray-400 text-sm font-medium">Vagas Limitadas!</span>
+                            </div>
+                            
+                            <h3 class="text-3xl md:text-4xl font-black text-brand-blue mb-2 leading-tight">Fox Confra Cup</h3>
+                            <p class="text-xl font-semibold text-gray-700 mb-4">O torneio que encerra o ano com chave de ouro!</p>
+                            
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Acharam que o ano acabaria sem mais um torneio? A casa estará aberta para aquela competição boa, com muitos jogos, churrasco, samba e resenha no melhor estilo Fox Tennis! 🌄🦊
+                            </p>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                                <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-brand-orange">
+                                    <p class="font-bold text-gray-800 text-sm uppercase mb-1">Categorias</p>
+                                    <p class="text-gray-600 text-sm">Simples (Livre E/D/C/B)</p>
+                                    <p class="text-gray-600 text-sm">Dupla Mista</p>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-brand-blue">
+                                    <p class="font-bold text-gray-800 text-sm uppercase mb-1">Dia 13/12 (Finais)</p>
+                                    <p class="text-gray-600 text-sm">Churrasco & Samba</p>
+                                    <p class="text-gray-600 text-sm">Pôr do Sol da Fox</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-center justify-between gap-6 bg-brand-blue/5 p-6 rounded-xl border border-brand-blue/10">
+                                <div>
+                                    <p class="text-gray-500 text-xs uppercase tracking-wider font-bold mb-1">Torneio + Churrasco + Samba</p>
+                                    <div class="flex items-baseline gap-2">
+                                        <span class="text-4xl font-black text-brand-blue">R$ 170</span>
+                                    </div>
+                                    <p class="text-gray-400 text-xs mt-1">Só Churrasco + Samba: <strong>R$ 60</strong></p>
+                                </div>
+
+                                <a href="https://api.whatsapp.com/send?phone=552170962362&text=Ol%C3%A1!%20Quero%20me%20inscrever%20na%20Fox%20Confra%20Cup" target="_blank" class="cta-button w-full sm:w-auto text-center text-white font-bold py-4 px-8 rounded-full uppercase text-sm tracking-wider hover:shadow-xl transform transition hover:-translate-y-1">
+                                    Quero Me Inscrever
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>
         </section>
+
         <section class="py-16 md:py-24 bg-gray-100 overflow-hidden"> <div class="container mx-auto px-6">
                 <div class="text-center mb-12" data-aos="fade-up">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nossos Campeões</h2>
@@ -185,29 +244,79 @@
                 </div>
                 <div class="swiper" data-aos="fade-up">
                     <div class="swiper-wrapper">
+                        <!-- NOVO CAMPEÃO: Marcelo -->
                         <div class="swiper-slide">
-                           <div class="bg-white rounded-lg shadow-md p-6 text-center"> <img src="vitor_campeao.png" alt="Campeão Vitor" class="w-full h-80 object-cover rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Campeão';">
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="marcelo_campeao.png" alt="Campeão Marcelo" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Marcelo+Campeão';">
+                                <h3 class="text-2xl font-bold text-brand-blue">Marcelo</h3>
+                                <p class="text-gray-700 font-semibold">Campeão Cat D</p>
+                                <p class="text-gray-500">Circuito Niteroiense de Tennis</p>
+                            </div>
+                        </div>
+                        <!-- NOVO CAMPEÃO: PJ -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="pj_campeao.png" alt="Campeão PJ" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=PJ+Campeão';">
+                                <h3 class="text-2xl font-bold text-brand-blue">PJ</h3>
+                                <p class="text-gray-700 font-semibold">Campeão Cat E</p>
+                                <p class="text-gray-500">Circuito Niteroiense de Tennis</p>
+                            </div>
+                        </div>
+                        <!-- NOVO VICE-CAMPEÃO: Alexandre e Renan -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="renan_ale_campeoes.png" alt="Vice Campeões Alexandre e Renan" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Alexandre+e+Renan';">
+                                <h3 class="text-2xl font-bold text-brand-blue">Alexandre e Renan</h3>
+                                <p class="text-gray-700 font-semibold">Vice Campeões Cat D Duplas</p>
+                                <p class="text-gray-500">0/40 Rackets</p>
+                            </div>
+                        </div>
+                        <!-- NOVO VICE-CAMPEÃO: PH e Matheus -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="matheuseph_campeao.png" alt="Vice Campeões PH e Matheus" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=PH+e+Matheus';">
+                                <h3 class="text-2xl font-bold text-brand-blue">PH e Matheus</h3>
+                                <p class="text-gray-700 font-semibold">Vice Campeões Cat AC Duplas</p>
+                                <p class="text-gray-500">0/40 Rackets</p>
+                            </div>
+                        </div>
+                        
+                        <!-- SLIDES EXISTENTES -->
+                        <div class="swiper-slide">
+                           <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="vitor_campeao.png" alt="Campeão Vitor" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Vitor+Campeão';">
                                 <h3 class="text-2xl font-bold text-brand-blue">Vitor</h3>
                                 <p class="text-gray-700 font-semibold">Campeão Cat C</p>
                                 <p class="text-gray-500">0/40 rackets</p>
                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> <img src="matheus_campeao.png" alt="Campeão Matheus Ambrosio" class="w-full h-80 object-cover rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Campeão';">
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="matheus_campeao.png" alt="Campeão Matheus Ambrosio" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Matheus+Campeão';">
                                 <h3 class="text-2xl font-bold text-brand-blue">Matheus Ambrosio</h3>
                                 <p class="text-gray-700 font-semibold">Campeão Cat D</p>
                                 <p class="text-gray-500">Circuito Niteroiense de Tennis</p>
-                           </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> <img src="bruna_campea.png" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
-                                 <h3 class="text-2xl font-bold text-brand-blue">Bruna Helena</h3>
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="bruna_campea.png" alt="Campeã Bruna Helena" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Bruna+Campeã';">
+                                 <h3 class="text-2xl font-bold text-brand-blue">Bruna Helena </h3>
                                  <p class="text-gray-700 font-semibold">Campeã Feminino Iniciante</p>
                                  <p class="text-gray-500">Leonardo Conrado Tennis Team</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> <img src="cleber_campeao.png" alt="Campeão Fictício" class="w-full h-80 object-cover rounded-md mx-auto mb-4">
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center"> 
+                                <!-- Adicionado object-top -->
+                                <img src="cleber_campeao.png" alt="Campeão Cleber Prado" class="w-full h-80 object-cover object-top rounded-md mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x320/002c69/FFFFFF?text=Cleber+Campeão';">
                                  <h3 class="text-2xl font-bold text-brand-blue">Cleber Prado</h3>
                                  <p class="text-gray-700 font-semibold">Campeão Cat E</p>
                                  <p class="text-gray-500">Open Tennis Coelho</p>
@@ -227,21 +336,22 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Momentos Fox</h2>
                     <p class="text-gray-600 mt-2">Mais que um clube, uma família. Confira nossos registros!</p>
                 </div>
+                <!-- Imagens da galeria (sem alterações solicitadas) -->
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                     <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
-                        <img src="momentos_fox_1.png" alt="Momento de confraternização na Fox Tennis" class="w-full h-full object-cover">
+                        <img src="momentos_fox_1.png" alt="Momento de confraternização na Fox Tennis" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/000000?text=Momento+1';">
                     </div>
                     <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="momentos_fox_2.jpeg" alt="Alunos em aula de tênis" class="w-full h-full object-cover">
+                        <img src="momentos_fox_2.jpeg" alt="Alunos em aula de tênis" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/000000?text=Momento+2';">
                     </div>
                     <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="momentos_fox_3.jpeg" alt="Jogadores em partida na Fox Tennis" class="w-full h-full object-cover">
+                        <img src="momentos_fox_3.jpeg" alt="Jogadores em partida na Fox Tennis" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/000000?text=Momento+3';">
                     </div>
                     <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="momentos_fox_4.png" alt="Crianças na aula de tênis infantil" class="w-full h-full object-cover">
+                        <img src="momentos_fox_4.png" alt="Crianças na aula de tênis infantil" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/000000?text=Momento+4';">
                     </div>
                     <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="400">
-                        <img src="momentos_fox_5.png" alt="Equipe e alunos da Fox Tennis" class="w-full h-full object-cover">
+                        <img src="momentos_fox_5.png" alt="Equipe e alunos da Fox Tennis" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x300/CCCCCC/000000?text=Momento+5';">
                     </div>
                 </div>
             </div>
